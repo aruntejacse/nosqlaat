@@ -1,0 +1,102 @@
+
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
+
+  <!-- Main Site -->
+  <main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+           <div class="filter">
+               <a href="/"><i class="fas fa-angle-double-left"></i> All Cereals</a>
+           </div>
+        </div>
+        <div class="form-title text-center">
+            <h2 class="text-dark">Update Cereal</h2>
+            <span class="text-dark">Use the below form to Update a cereal</span>
+        </div>
+
+        <!-- add user form -->
+         <!-- form handling -->
+ <form method="POST" id="update_user">
+    <div class="new_user">
+
+        <div class="form-group">
+            <label for="name" class="text-dark">Name</label>
+            <input type="hidden" name="id" value="<%= user._id %>">
+            <input type="text" name="name" value="<%= user.name %>">
+        </div>
+        <div class="form-group">
+            <label for="name" class="text-dark">MFR</label>
+            <input type="hidden" name="id" value="<%= user._id %>">
+            <input type="text" name="mfr" value="<%= user.mfr %>">
+        </div>
+
+        <div class="form-group">
+            <label for="type" class="text-dark">Type</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-2" name="type" value="C" <%= user.type == 'C' ? 'checked' : '' %>>
+                <label for="radio-2" class="radio-label">C</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-3" name="type" value="H"  <%= user.type == 'H' ? 'checked' : '' %> >
+                <label for="radio-3" class="radio-label">H</label>
+            </div>
+        </div>
+
+        <!-- <div class="form-group">
+            <label for="name" class="text-dark">Type</label>
+            <input type="hidden" name="id" value="<%= user._id %>">
+            <input type="text" name="type" value="<%= user.type %>">
+        </div> -->
+        <div class="form-group">
+            <label for="name" class="text-dark">Calories</label>
+            <input type="hidden" name="id" value="<%= user._id %>">
+            <input type="text" name="calories" value="<%= user.calories %>">
+        </div>
+        <div class="form-group">
+            <label for="name" class="text-dark">Protein</label>
+            <input type="hidden" name="id" value="<%= user._id %>">
+            <input type="text" name="protein" value="<%= user.protein %>">
+        </div>
+        <div class="form-group">
+            <label for="name" class="text-dark">Fat</label>
+            <input type="hidden" name="id" value="<%= user._id %>">
+            <input type="text" name="fat" value="<%= user.fat %>">
+        </div>
+        <div class="form-group">
+            <label for="name" class="text-dark">Sodium</label>
+            <input type="hidden" name="id" value="<%= user._id %>">
+            <input type="text" name="sodium" value="<%= user.sodium %>">
+        </div>
+        <div class="form-group">
+            <label for="name" class="text-dark">Fiber</label>
+            <input type="hidden" name="id" value="<%= user._id %>">
+            <input type="text" name="fiber" value="<%= user.fiber %>">
+        </div>
+        <div class="form-group">
+            <label for="name" class="text-dark">Carbo</label>
+            <input type="hidden" name="id" value="<%= user._id %>">
+            <input type="text" name="carbo" value="<%= user.carbo %>">
+        </div>
+        <div class="form-group">
+            <label for="name" class="text-dark">Sugars</label>
+            <input type="hidden" name="id" value="<%= user._id %>">
+            <input type="text" name="sugars" value="<%= user.sugars %>">
+        </div>
+
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">SAVE</button>
+        </div>
+
+    </div>
+</form>
+       
+    </div>
+</main>
+<!-- /Main Site -->
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->

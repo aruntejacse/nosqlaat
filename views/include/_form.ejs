@@ -1,0 +1,69 @@
+ <!-- form handling -->
+ <form action="/api/users" method="POST" id="add_user">
+    <div class="new_user">
+
+        <div class="form-group">
+            <label for="name" class="text-dark">Name</label>
+            <input type="hidden" name="id" value="name">
+            <input type="text" name="name" value="Cereal Name" autocomplete="off" placeholder="Cereal Name">
+        </div>
+        
+        <div class="form-group">
+            <label for="name" class="text-dark">Manufacturer</label>
+            <!-- <input type="hidden" name="RestingBP" value="RestingBP"> -->
+            <input type="text" name="mfr" value="K" placeholder="K">
+        </div>
+
+        <div class="form-group">
+            <label for="type" class="text-dark">Type</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-2" name="type" value="C" >
+                <label for="radio-2" class="radio-label">C</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-3" name="type" value="H" >
+                <label for="radio-3" class="radio-label">H</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="name" class="text-dark">Calories</label>
+            <!-- <input type="hidden" name="FastingBS" value="FastingBS"> -->
+            <input type="text" name="calories" value="120" placeholder="120">
+        </div>
+        <div class="form-group">
+            <label for="name" class="text-dark">Proteins</label>
+            <!-- <input type="hidden" name="RestingECG" value="RestingECG"> -->
+            <input type="text" name="protein" value="4" placeholder="4">
+        </div>
+        <div class="form-group">
+            <label for="name" class="text-dark">Fat</label>
+            <!-- <input type="hidden" name="MaxHR" value="MaxHR"> -->
+            <input type="text" name="fat" value="2" placeholder="2">
+        </div>
+        <div class="form-group">
+            <label for="name" class="text-dark">Sodium</label>
+            <!-- <input type="hidden" name="ExerciseAngina" value="ExerciseAngina"> -->
+            <input type="text" name="sodium" value="200" placeholder="200">
+        </div>
+        <div class="form-group">
+            <label for="name" class="text-dark">Fiber</label>
+            <!-- <input type="hidden" name="Oldpeak" value="Oldpeak"> -->
+            <input type="text" name="fiber" value="1" placeholder="1">
+        </div>
+        <div class="form-group">
+            <label for="name" class="text-dark">Carbo</label>
+            <!-- <input type="hidden" name="ST_Slope" value="ST_Slope"> -->
+            <input type="text" name="carbo" value="11" placeholder="11">
+        </div>
+        <div class="form-group">
+            <label for="name" class="text-dark">Sugars</label>
+            <!-- <input type="hidden" name="HeartDisease" value="HeartDisease"> -->
+            <input type="text" name="sugars" value="5" placeholder="5">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">SAVE</button>
+        </div>
+
+    </div>
+</form>

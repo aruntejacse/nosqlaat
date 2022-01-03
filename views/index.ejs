@@ -1,0 +1,51 @@
+
+<!-- include header -->
+    <%- include('include/_header') %>
+<!-- /include header -->
+
+
+    <!-- Main Site -->
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+                <a href="/add-user" class="border-shadow">
+                    <span class="text-gradient">Add Cereal <i class="fas fa-user-plus"></i></span>
+                </a>
+                <a href="/analysis-graph" class="graph">
+                    <span class="text-gradient">Graph <i class="fas fa-chart-line"></i></span>
+                </a>
+            </div>
+
+            <!-- form handling -->
+            <form action="/" method="POST">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Sl.no</th>
+                            <th>Name</th>
+                            <th>MFR</th>
+                            <th>Type</th>
+                            <th>Calories</th>
+                            <th>Protein</th>
+                            <th>Fat</th>
+                            <th>Sodium</th>
+                            <th>Fiber</th>
+                            <th>Carbo</th>
+                            <th>Sugars</th>
+                            <!-- <th>Status</th> -->
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%- include('include/_show') %>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </main>
+<!-- /Main Site -->
+
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->
